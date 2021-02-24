@@ -1,0 +1,57 @@
+version: '3.5'
+
+services:
+
+  app:
+    build: .
+    volumes:
+      - .:/code
+    entrypoint: ['python', 'run-django.py']
+    depends_on:
+      - db_prod
+    networks:
+      - database
+      - web
+
+  proxy:
+    image: nginx
+    ports:
+      - "443:443"
+    volumes:
+      - ./etc/nginx:/etc/nginx/conf.d/
+      - ./log/nginx:/var/log/nginx
+      - ./static:/var/www/static
+    depends_on:
+      - app
+    networks:
+      - web
+
+
+  db_prod:
+    image: mdillon/postgis
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: sidia
+    ports:
+      - "5433:5432"
+    volumes:
+      - sidia-data-prod:/var/lib/postgresql/data
+    networks:
+      - database
+
+  portainer:
+    image: portainer/portainer
+    ports:
+      - "9000:9000"
+    command: -H unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer-data:/data
+
+volumes:
+  sidia-data-prod:
+  portainer-data:
+
+networks:
+  web:
+  database:
