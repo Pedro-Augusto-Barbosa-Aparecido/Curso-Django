@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block conteudo %}
+
+    <h1>Nova Solicitação:</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% crispy form %}
+        <!--<input type="submit" value="Enviar" class="btn btn-primary">-->
+    </form>
+
+{% endblock %}
