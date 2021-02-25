@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5db5dc9b-de75-4f8b-8d57-5aeffc385de4" name="Default Changelist" comment="" />
+    <list default="true" id="5db5dc9b-de75-4f8b-8d57-5aeffc385de4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cadastros/apis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cadastros/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__production__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__dev__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cadastros/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cadastros/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +25,13 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1othO0OPyTHFCtjjvTaE6YERuDt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -40,7 +54,7 @@
       <recent name="C:\Users\bwx1026943\Documents\django\django1\proj" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.runserver">
+  <component name="RunManager" selected="Python.migrate">
     <configuration name="makemigrations" type="PythonConfigurationType" factoryName="Python">
       <module name="django1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,30 +141,30 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="Dockerfile" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="828" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614173305624">
+    <state x="828" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614259938708">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614173305624" />
+    <state x="828" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614259938708" />
     <state x="1154" y="283" key="FileChooserDialogImpl" timestamp="1614195720281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1154" y="283" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614195720281" />
-    <state width="981" height="347" key="GridCell.Tab.0.bottom" timestamp="1614193433568">
+    <state width="867" height="280" key="GridCell.Tab.0.bottom" timestamp="1614262931544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="981" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614193433568" />
-    <state width="981" height="347" key="GridCell.Tab.0.center" timestamp="1614193433568">
+    <state width="867" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614262931544" />
+    <state width="867" height="280" key="GridCell.Tab.0.center" timestamp="1614262931544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="981" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614193433568" />
-    <state width="981" height="347" key="GridCell.Tab.0.left" timestamp="1614193433568">
+    <state width="867" height="280" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614262931544" />
+    <state width="867" height="280" key="GridCell.Tab.0.left" timestamp="1614262931544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="981" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614193433568" />
-    <state width="981" height="347" key="GridCell.Tab.0.right" timestamp="1614193433568">
+    <state width="867" height="280" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614262931544" />
+    <state width="867" height="280" key="GridCell.Tab.0.right" timestamp="1614262931544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="981" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614193433568" />
+    <state width="867" height="280" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614262931544" />
     <state width="981" height="347" key="GridCell.Tab.1.bottom" timestamp="1614193433568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -171,6 +185,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614202547660" />
+    <state x="1066" y="256" key="Vcs.Push.Dialog.v2" timestamp="1614262903146">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1066" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614262903146" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614202938097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

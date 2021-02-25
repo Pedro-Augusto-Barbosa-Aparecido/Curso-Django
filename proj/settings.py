@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cadastros'
+    'rest_framework',
+    'cadastros',
 ]
 
 MIDDLEWARE = [
@@ -133,7 +134,7 @@ try:
     from .settings_dev import *
 except ImportError:
     try:
-        import __production__
+        import __dev__
         from .settings_production import *
     except:
         pass
