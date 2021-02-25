@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = '/login/'
+LOGOUT_URL = '/logout/'
+
+
 
 # Application definition
 
@@ -130,11 +136,11 @@ STATICFILES_DIRS = [
 ]
 
 try:
-    import __dev__
+    import __production__
     from .settings_dev import *
 except ImportError:
     try:
-        import __dev__
+        import __production__
         from .settings_production import *
     except:
         pass

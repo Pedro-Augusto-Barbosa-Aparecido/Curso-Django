@@ -17,4 +17,10 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = []
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'suporte@sidia.com.br'
+EMAIL_HOST_PASSWORD = 'senha'
+DEFAULT_FROM_EMAIL = 'Suporte  <suporte@sidia.com.br>'
