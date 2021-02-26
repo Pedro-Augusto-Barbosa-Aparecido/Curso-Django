@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_tables2',
     'crispy_forms',
     'cadastros',
     'tickets'
@@ -141,6 +142,8 @@ MEDIA_ROOT = 'media'
 MEDIA_URL = 'files/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+DJANGO_TABLES2_TEMPLATE = 'django_tables2/bootstrap4.html'
 
 try:
     import __production__

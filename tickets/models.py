@@ -60,6 +60,73 @@ class Solicitacao(models.Model):
     #
     #     super().save(*args, **kwargs)
 
+    def registrar_atendente(self, user):
+
+        self.status = self.STATUS_ONGOING
+        self.atendente = user
+        self.save()
+
+        interacao = Interacao.objects.create(
+            solicitacao=self,
+            tipo=Interacao.TIPO_ASSIGNED,
+            descricao=f'Solicitação assinada para o atendente {user.get_full_name()}',
+            atendente=user,
+        )
+
+        interacao.send_mail_message()
+
+        return True
+
+    def registrar_resposta(self, user, mensage):
+
+        self.atendente = user
+        self.save()
+
+        interacao = Interacao.objects.create(
+            solicitacao=self,
+            tipo=Interacao.TIPO_TEAM_RESPONSE,
+            descricao=f'Nova resposta no atendente: {mensage}',
+            atendente=user,
+        )
+
+        interacao.send_mail_message()
+
+        return True
+
+    def cancelar(self, user, motivo):
+
+        self.atendente = user
+        self.status = self.STATUS_CANCELED
+        self.save()
+
+        interacao = Interacao.objects.create(
+            solicitacao=self,
+            tipo=Interacao.TIPO_STATUS_CHANGE,
+            descricao=f'Ticket cancelado, motivo: {motivo}',
+            atendente=user,
+        )
+
+        interacao.send_mail_message()
+
+        return True
+
+    def finalizar(self, user, motivo):
+
+        self.atendente = user
+        self.status = self.STATUS_CLOSED
+        self.save()
+
+        interacao = Interacao.objects.create(
+            solicitacao=self,
+            tipo=Interacao.TIPO_STATUS_CHANGE,
+            descricao=f'Ticket finalizado, motivo: {motivo}',
+            atendente=user,
+        )
+
+        interacao.send_mail_message()
+
+        return True
+
 
 class Interacao(models.Model):
 
