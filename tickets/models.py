@@ -1,4 +1,6 @@
+from django.conf import settings
 from django.contrib.auth.models import User
+from django.core.mail import send_mail
 from django.db import models
 
 # Create your models here.
@@ -69,7 +71,7 @@ class Interacao(models.Model):
         (TIPO_STATUS_CHANGE, 'Mudança de status'),
     )
 
-    solicitacao = models.ForeignKey(Solicitacao, on_delete=models.CASCADE)
+    solicitacao = models.ForeignKey(Solicitacao, on_delete=models.CASCADE, related_name='interacoes')
     tipo = models.PositiveSmallIntegerField(choices=TIPO_CHOICES)
     descricao = models.TextField()
     atendente = models.ForeignKey(User, on_delete=models.PROTECT, null=True, blank=True)
@@ -84,4 +86,10 @@ class Interacao(models.Model):
         return f'{self.pk}'
 
     def send_mail_message(self):
-        pass
+
+        send_mail(
+            subject=f'{self.solicitacao} - Nova interação - {self.get_tipo_display()}',
+            message=self.descricao,
+            from_email=settings.DEFAULT_FROM_EMAIL,
+            recipient_list=[self.solicitacao.email]
+        )

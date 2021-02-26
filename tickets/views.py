@@ -20,9 +20,11 @@ class NovaSolicitacao(View):
 
         if form.is_valid():
 
-            form.save()
+            obj = form.save(commit=True)
+            obj.save()
 
-            Interacao.objects.create()
+            interacao = Interacao.objects.create(solicitacao=obj, tipo=Interacao.TIPO_STATUS_CHANGE, descricao='Solicitação aberta com sucesso')
+            interacao.send_mail_message()
 
             return redirect('cidades-list')
 
