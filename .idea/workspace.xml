@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5db5dc9b-de75-4f8b-8d57-5aeffc385de4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tickets/apis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tickets/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tickets/migrations/0002_auto_20210226_1055.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tickets/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/proj/settings_dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj/settings_dev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickets/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/tickets/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj/settings_production.py" beforeDir="false" afterPath="$PROJECT_DIR$/proj/settings_production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tickets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tickets/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tickets/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tickets/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tickets/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614286663434</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding api on tickets system">
+      <created>1614341730890</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614341730890</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -172,37 +180,38 @@
     <MESSAGE value="Adding the API" />
     <MESSAGE value="Adding authenticate" />
     <MESSAGE value="Adding a new app and new dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding a new app and new dependencies" />
+    <MESSAGE value="Adding api on tickets system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding api on tickets system" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614280656542">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="828" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614280656542" />
-    <state x="1129" y="118" key="CommitChangelistDialog2" timestamp="1614286661279">
+    <state x="1129" y="118" key="CommitChangelistDialog2" timestamp="1614341728876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1129" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1614286661279" />
+    <state x="1129" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1614341728876" />
     <state x="1154" y="283" key="FileChooserDialogImpl" timestamp="1614195720281">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1154" y="283" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614195720281" />
-    <state width="771" height="279" key="GridCell.Tab.0.bottom" timestamp="1614341704628">
+    <state width="797" height="279" key="GridCell.Tab.0.bottom" timestamp="1614352392501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="771" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614341704628" />
-    <state width="771" height="279" key="GridCell.Tab.0.center" timestamp="1614341704628">
+    <state width="797" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614352392501" />
+    <state width="797" height="279" key="GridCell.Tab.0.center" timestamp="1614352392501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="771" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614341704628" />
-    <state width="771" height="279" key="GridCell.Tab.0.left" timestamp="1614341704627">
+    <state width="797" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614352392501" />
+    <state width="797" height="279" key="GridCell.Tab.0.left" timestamp="1614352392501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="771" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614341704627" />
-    <state width="771" height="279" key="GridCell.Tab.0.right" timestamp="1614341704628">
+    <state width="797" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614352392501" />
+    <state width="797" height="279" key="GridCell.Tab.0.right" timestamp="1614352392501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="771" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614341704628" />
+    <state width="797" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614352392501" />
     <state width="809" height="347" key="GridCell.Tab.1.bottom" timestamp="1614286576972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -223,10 +232,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1614202547660" />
-    <state x="1066" y="256" key="Vcs.Push.Dialog.v2" timestamp="1614286667655">
+    <state x="1066" y="256" key="Vcs.Push.Dialog.v2" timestamp="1614341735206">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1066" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614286667655" />
+    <state x="1066" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614341735206" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1614276734170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
